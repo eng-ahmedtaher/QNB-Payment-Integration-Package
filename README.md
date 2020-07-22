@@ -12,26 +12,26 @@ To install Package use composer
 
 # Add service provider & alias
 
-Add the following service provider to the array in: ```php config/app.php ```
+Add the following service provider to the array in: ``` config/app.php ```
   ```php
   Payments\QNBPayment\Providers\QNBPaymentProvider::class
   ```
   
 Add the following alias to the array in: ``` config/app.php```
-  ```
+  ```php
   'QNBPayment' => Payments\QNBPayment\Providers\Facades\QNBPayment::class
   ```
   
 # Publish the config file
 
-  ``` 
+  ```php
   php artisan vendor:publish
   ```
   config file have name ``` BankPayment.php ``` it return an array of payment options like ``` apiOperation, currency, ApiUrl ```
 
 ## Usage
 
-```
+```php
 
 	// Create Session for Payment SandBox Mode
 	QNBPayment::createSessionSandBox();
@@ -59,7 +59,7 @@ Add the following alias to the array in: ``` config/app.php```
 ```
 
 ## Example of Payment Method via Master Card or Visa in SandBox Mode
-```
+```php
 
 	// Create Session for Payment
 	$sessionID = QNBPayment::createSessionSandBox('125550', 'TESTQNBAATEST001', '9c6a123857f1ea50830fa023ad8c8d1b');
@@ -108,7 +108,7 @@ Add the following alias to the array in: ``` config/app.php```
 - All Information of Payment, Ex: 'Payment Method, Total Price, Card Number, Transaction Date, ...'.
 
 ## Example of Payment Method via Meeza Digital in SandBox Mode
-```
+```php
 
 	// Start Payment via Meeza Digital
 	echo createPaymentMeezaSandBox('success.php', 'fail.php', 10000001117, 100083, 123456, 80);
