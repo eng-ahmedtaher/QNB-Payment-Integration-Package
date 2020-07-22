@@ -1,5 +1,5 @@
 {
-    "name": "Payments/QNBPayment",
+    "name": "payments/qnb-payment",
     "description": "QNB Payment Integration",
     "type": "package",
     "license": "MIT",
