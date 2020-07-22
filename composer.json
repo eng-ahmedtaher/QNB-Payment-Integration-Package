@@ -24,5 +24,15 @@
             "payments\\qnb-payment\\Providers\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Payments\\QNBPayment\\Providers\\QNBPaymentProvider::class"
+            ],
+            "aliases": {
+                "QNBPayment": "Payments\\QNBPayment\\Providers\\Facades\\QNBPayment::class"
+            }
+        }
+    },
 }
