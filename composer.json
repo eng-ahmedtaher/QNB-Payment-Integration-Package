@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Payments\\QNBPayment\\Providers\\": "src/"
+            "payments\\qnb-payment\\Providers\\": "src/"
         }
     },
     "minimum-stability": "dev"
