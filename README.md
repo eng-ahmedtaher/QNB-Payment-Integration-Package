@@ -6,14 +6,14 @@ QNB Payment Integration Package is a Package for Integrated Payment via QNB Bank
 
 To install Package use composer
 
-``` 
+```php
   composer require Payments/QNBPayment:dev-master
 ```
 
 # Add service provider & alias
 
-Add the following service provider to the array in: ``` config/app.php```
-  ```
+Add the following service provider to the array in: ```php config/app.php```
+  ```php
   Payments\QNBPayment\Providers\QNBPaymentProvider::class
   ```
   
