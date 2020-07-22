@@ -12,7 +12,7 @@ To install Package use composer
 
 # Add service provider & alias
 
-Add the following service provider to the array in: ```php config/app.php```
+Add the following service provider to the array in: ```php config/app.php ```
   ```php
   Payments\QNBPayment\Providers\QNBPaymentProvider::class
   ```
