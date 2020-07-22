@@ -1,0 +1,28 @@
+{
+    "name": "Payments/QNBPayment",
+    "description": "QNB Payment Integration",
+    "type": "package",
+    "license": "MIT",
+    "version": "1.0",
+    "keywords": [
+        "QNB Class",
+        "laravel",
+        "QNB Payment Online"
+    ],
+    "authors": [
+        {
+            "name" : "Ahmed Taher",
+            "GitHub": "https://github.com/eng-ahmedtaher/",
+            "role" : "Developers",
+        }
+    ],
+    "require": {
+        "php": ">= 5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payments\\QNBPayment\\Providers\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
